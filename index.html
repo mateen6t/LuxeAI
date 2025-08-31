@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>AI Persona Mastery By LuxeAI</title>
-  <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
   <style>
     :root {
       --primary:#000;
@@ -71,7 +70,8 @@
     <div class="hero-text">
       <h1>Launch a Profitable AI Persona from Zero and Monetize it!</h1>
       <p>Step-by-step system for beginners to build, monetize, and scale AI creators on Fanvue, Patreon, and Instagram and Earn 500$+</p>
-      <a href="https://yourstore.lemonsqueezy.com/checkout/buy/PRODUCT_ID" class="lemonsqueezy-button btn-primary" data-ls-embed="true">Buy Now — $29</a>
+      <!-- Payhip placeholder checkout link -->
+      <a href="https://payhip.com/buy?link[]=QFhMx&session_enabled=1&parent_url=https%3A%2F%2Fpayhip.com%2Fb%2FQFhMx&type=overlay&payhip_js=true" class="btn-primary">Buy Now — $29</a>
     </div>
     <div class="hero-mockup">
       <!-- Replace with your ebook cover -->
@@ -117,7 +117,8 @@
 <section id="buy" style="text-align:center;">
   <h2>Get Instant Access</h2>
   <p>35+ page guidebook with prompts, templates, and click-by-click tutorials.</p>
-  <a href="https://yourstore.lemonsqueezy.com/checkout/buy/PRODUCT_ID" class="lemonsqueezy-button btn-primary" data-ls-embed="true">Buy Now — $29</a>
+  <!-- Payhip placeholder checkout link -->
+  <a href="https://payhip.com/buy?link[]=QFhMx&session_enabled=1&parent_url=https%3A%2F%2Fpayhip.com%2Fb%2FQFhMx&type=overlay&payhip_js=true" class="btn-primary">Buy Now — $29</a>
 </section>
 
 <footer>
@@ -134,31 +135,24 @@
   });
 </script>
 <script>
-  // Create a canvas
+  // Favicon script (AI logo)
   const canvas = document.createElement("canvas");
   canvas.width = 64;
   canvas.height = 64;
   const ctx = canvas.getContext("2d");
-
-  // White background
   ctx.fillStyle = "#ffffff";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  // Text "AI"
-  ctx.fillStyle = "#000000"; // purple text
+  ctx.fillStyle = "#000000";
   ctx.font = "bold 32px sans-serif";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
   ctx.fillText("AI", canvas.width / 2, canvas.height / 2);
-
-  // Convert to data URL and add as favicon
   const link = document.createElement("link");
   link.rel = "icon";
   link.type = "image/png";
   link.href = canvas.toDataURL("image/png");
   document.head.appendChild(link);
 </script>
-
 
 </body>
 </html>
