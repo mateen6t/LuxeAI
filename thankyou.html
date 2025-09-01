@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thank You - LuxeAI</title>
+  <style>
+    :root {
+      --primary:#000;
+      --secondary:#6b7280;
+      --bg-gradient:linear-gradient(135deg,#fdfbfb,#ebedee);
+    }
+    body {margin:0; font-family: 'Inter', sans-serif; background:#fff; color:#111; scroll-behavior:smooth;}
+    header {position:fixed; top:0; left:0; right:0; background:#fff; border-bottom:1px solid #eee; z-index:10;}
+    nav {max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:15px 20px;}
+    nav a {margin:0 12px; text-decoration:none; color:#111; font-weight:600; transition:.2s;}
+    nav a:hover {color:var(--primary);}
+    .hero {
+      padding:160px 20px 100px;
+      text-align:center;
+      background:var(--bg-gradient);
+    }
+    .hero-inner {max-width:800px; margin:0 auto;}
+    .hero-text h1 {font-size:3rem; margin-bottom:20px; line-height:1.2;}
+    .hero-text p {font-size:1.2rem; color:var(--secondary); margin-bottom:25px;}
+    .btn-primary {
+      background:var(--primary); color:#fff; padding:15px 35px; font-size:1rem; border-radius:10px;
+      text-decoration:none; display:inline-block; transition:.3s; font-weight:600;
+    }
+    .btn-primary:hover {transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,0.2);}
+    footer {text-align:center; font-size:0.9rem; padding:25px; background:#f9f9f9; margin-top:50px;}
+    @media (max-width:900px){
+      .hero-text h1 {font-size:2.2rem;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div><strong>LuxeAI</strong></div>
+    <div>
+      <a href="index.html#learn">Learn</a>
+      <a href="index.html#success">Success</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#buy">Buy</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>🎉 Thank You for Your Purchase!</h1>
+      <p>Your payment was successful. You can now download your full guide below.</p>
+      <a href="AI_Creator_Academy_Guide.pdf" download class="btn-primary">⬇ Download Your Course</a>
+      <p style="margin-top:20px; font-size:0.95rem; color:#6b7280;">A confirmation email has also been sent with your download link.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 - LuxeAI
+</footer>
+
+<script>
+  // Keep favicon generator consistent with index
+  const canvas = document.createElement("canvas");
+  canvas.width = 64;
+  canvas.height = 64;
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "#000000";
+  ctx.font = "bold 32px sans-serif";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText("AI", canvas.width / 2, canvas.height / 2);
+  const link = document.createElement("link");
+  link.rel = "icon";
+  link.type = "image/png";
+  link.href = canvas.toDataURL("image/png");
+  document.head.appendChild(link);
+</script>
+
+</body>
+</html>
